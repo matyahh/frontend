@@ -1,4 +1,4 @@
-# Documentação do Sistema para Barbearias
+# Documentação do Sistema para Barbearias - Front-end
 
 ## 1. Introdução
 
