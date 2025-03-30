@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Administrativo - Barbearia Dias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/login.css">
+    <style>
+        
+    </style>
+</head>
+<body class="login-page">
+    <header>
+        <nav>
+            <h1>Barbearia Dias</h1>
+            <div class="nav-links">
+                <a href="../../index.html" class="nav-button"style="margin-right: 20px;">
+                    <i class="fas fa-arrow-left"></i>
+                    Voltar para o Site
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h2 class="login-title">Login Administrativo</h2>
+            <div id="error-message" class="error-message"></div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <button type="submit">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Entrar
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Barbearia Dias</h3>
+                    <p>Transformando seu visual desde 2015</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Barbearia Dias. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../../assets/js/login.js"></script>
+</body>
+</html>

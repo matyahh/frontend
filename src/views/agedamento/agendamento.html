@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Style - Agendamento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/agendamento.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Barbearia Dias</h1>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../auth/login.html" class="nav-button" style="margin-right: 20px;">Área Admin</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="appointment-page">
+            <div class="container">
+                <h2>Agende seu Horário</h2>
+                <div class="appointment-content">
+                    <div class="appointment-info">
+                        <h3>Informações Importantes</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-clock"></i> Duração dos serviços:
+                                <ul id="service-durations">
+                                    <!-- Durações serão carregadas dinamicamente -->
+                                </ul>
+                            </li>
+                            <li><i class="fas fa-info-circle"></i> Chegue 5 minutos antes do horário marcado</li>
+                            <li><i class="fas fa-calendar"></i> Agendamentos com até 30 dias de antecedência</li>
+                            <li><i class="fas fa-ban"></i> Cancelamentos devem ser feitos com 2 horas de antecedência</li>
+                        </ul>
+                    </div>
+                    
+                    <form id="appointment-form" class="appointment-form">
+                        <div class="form-group">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" placeholder="(11) 99999-9999" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Serviço:</label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecione um serviço</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Data:</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Horário:</label>
+                            <select id="time" name="time" required>
+                                <option value="">Selecione um horário</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                            </select>
+                        </div>
+
+                        <button type="submit">
+                            <i class="fas fa-calendar-check"></i>
+                            Confirmar Agendamento
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Barbearia Style</h3>
+                    <p>Transformando seu visual desde 2015</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://facebook.com/barbearia-style" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/barbearia-style" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Barbearia Style. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../../assets/js/agendamento.js"></script>
+</body>
+</html>

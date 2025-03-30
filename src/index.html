@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Dias - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Barbearia Dias</h1>
+            <div class="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#localizacao">Localização</a>
+                <a href="./views/agedamento/agendamento.html" class="nav-button">Agendar</a>
+                <a href="./views/auth/login.html" class="nav-button">Área Admin</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Bem-vindo à Barbearia Dias</h2>
+                <p>Onde estilo e tradição se encontram para criar sua melhor versão</p>
+                <a href="/views/agendamento/agendamento.html" class="cta-button">Agende Agora</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <div class="sobre-content">
+                    <div class="sobre-text">
+                        <p>Com mais de 10 anos de experiência, a Barbearia Style se destaca pela excelência em serviços de barbearia. Nossa equipe de profissionais altamente qualificados está comprometida em proporcionar a melhor experiência para nossos clientes.</p>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Profissionais experientes</li>
+                            <li><i class="fas fa-check"></i> Ambiente climatizado</li>
+                            <li><i class="fas fa-check"></i> Produtos de primeira linha</li>
+                            <li><i class="fas fa-check"></i> Agendamento online</li>
+                        </ul>
+                    </div>
+                    <div class="horario-funcionamento">
+                        <h3>Horário de Funcionamento</h3>
+                        <ul>
+                            <li><span>Segunda a Sexta:</span> 09:00 - 18:00</li>
+                            <li><span>Sábado:</span> 09:00 - 18:00</li>
+                            <li><span>Domingo:</span> Fechado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="servicos">
+            <div class="container">
+                <h2>Nossos Serviços</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-cut"></i>
+                        <h3>Corte de Cabelo</h3>
+                        <p>Corte profissional personalizado para seu estilo</p>
+                        <span class="price">R$ 45,00</span>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-hand"></i>
+                        <h3>Barba</h3>
+                        <p>Acabamento perfeito para sua barba</p>
+                        <span class="price">R$ 35,00</span>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Corte + Barba</h3>
+                        <p>Combo completo para um visual impecável</p>
+                        <span class="price">R$ 70,00</span>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Coloração</h3>
+                        <p>Pintura e coloração profissional</p>
+                        <span class="price">R$ 80,00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="localizacao" class="localizacao">
+            <div class="container">
+                <h2>Nossa Localização</h2>
+                <div class="location-content">
+                    <div class="location-info">
+                        <h3>Endereço</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Rua Example, 123 - Centro</p>
+                        <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                        <p><i class="fas fa-envelope"></i> contato@barbeariastyle.com</p>
+                    </div>
+                    <div class="map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d960.1451124225546!2d-41.34484171962169!3d-15.720403629298104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x74ecdfa651701f5%3A0x2c7f6176222cf8a3!2sBarbearia%20Dias!5e0!3m2!1spt-BR!2sbr!4v1743173166854!5m2!1spt-BR!2sbr" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Barbearia Style</h3>
+                    <p>Transformando seu visual desde 2015</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Barbearia Style. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

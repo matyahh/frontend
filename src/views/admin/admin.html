@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo - Barbearia Dias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/admin.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Painel Administrativo</h1>
+            <div class="nav-links">
+                <a href="../../index.html" class="nav-button">
+                    <i class="fas fa-home"></i>
+                    Voltar ao Site
+                </a>
+                <button onclick="logout()" class="nav-button">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Sair
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dashboard Cards -->
+        <div class="dashboard">
+            <div class="dashboard-card">
+                <h3>Total</h3>
+                <div id="total-appointments" class="number">0</div>
+            </div>
+            <div class="dashboard-card">
+                <h3>Pendentes</h3>
+                <div id="pending-appointments" class="number">0</div>
+            </div>
+            <div class="dashboard-card">
+                <h3>Confirmados</h3>
+                <div id="confirmed-appointments" class="number">0</div>
+            </div>
+            <div class="dashboard-card">
+                <h3>Cancelados</h3>
+                <div id="canceled-appointments" class="number">0</div>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+            <input type="date" id="date-filter" placeholder="Filtrar por data">
+            <input type="time" id="time-filter" placeholder="Filtrar por hora">
+            <select id="status-filter">
+                <option value="">Todos os status</option>
+                <option value="pendente">Pendente</option>
+                <option value="confirmado">Confirmado</option>
+                <option value="cancelado">Cancelado</option>
+            </select>
+            <button onclick="limparFiltros()">
+                <i class="fas fa-sync-alt"></i>
+                Limpar Filtros
+            </button>
+        </div>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <h2>Gerenciar Serviços</h2>
+            
+            <!-- Add Service Form -->
+            <div class="service-form-container">
+                <h3>Adicionar Novo Serviço</h3>
+                <form id="add-service-form" class="service-form">
+                    <div class="form-group">
+                        <label for="service-name">Nome do Serviço</label>
+                        <input type="text" id="service-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-code">Código do Serviço</label>
+                        <input type="text" id="service-code" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-description">Descrição</label>
+                        <textarea id="service-description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-price">Preço (R$)</label>
+                        <input type="number" id="service-price" step="0.01" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-duration">Duração (minutos)</label>
+                        <input type="number" id="service-duration" min="1" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Adicionar Serviço</button>
+                </form>
+            </div>
+
+            <!-- Services List -->
+            <div class="services-list-container">
+                <h3>Serviços Disponíveis</h3>
+                <div id="services-list" class="services-grid">
+                    <!-- Será preenchido pelo JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointments List -->
+        <div class="appointments-container">
+            <div id="appointments-list">
+                <!-- Será preenchido pelo JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Barbearia Style</h3>
+                    <p>Transformando seu visual desde 2015</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://facebook.com/barbearia-style" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/barbearia-style" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Barbearia Style. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/admin.js"></script>
+</body>
+</html>

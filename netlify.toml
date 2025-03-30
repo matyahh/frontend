@@ -1,0 +1,7 @@
+[build]
+  base = "src"
+  publish = "public"
+  command = "npm run build"
+
+[build.environment]
+  API_URL = "https://backend-production-9519.up.railway.app"
