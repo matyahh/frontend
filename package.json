@@ -1,0 +1,13 @@
+{
+  "name": "barbearia-dias-frontend",
+  "version": "1.0.0",
+  "description": "Frontend da Barbearia Dias",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p public && cp -r src/* public/",
+    "start": "npx http-server public"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
